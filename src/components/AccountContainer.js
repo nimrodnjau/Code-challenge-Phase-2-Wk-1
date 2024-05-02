@@ -8,7 +8,7 @@ function AccountContainer() {
 //This fetches data from the server and assigns the data to a variable
   const [transactions, setTransactions] = useState([])
     useEffect(()=>{
-      fetch('http://localhost:8001/transactions')
+      fetch('https://code-challenge-phase-2-wk-1-2.onrender.com/transactions')
         .then((response) => response.json())
         .then((data) => {
          setTransactions(data)

@@ -35,7 +35,7 @@ function AddTransactionForm({transactions, onSubmission}) {
 
   //This adds the input data to be sent to the server
   const addTransaction = async (newTransaction) => {
-    const BASE_URL = "http://localhost:8001";
+    const BASE_URL = "https://code-challenge-phase-2-wk-1-2.onrender.com";
     try {
       const response = await fetch(`${BASE_URL}/transactions`, {
         method: 'POST',

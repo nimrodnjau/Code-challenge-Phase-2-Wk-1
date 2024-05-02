@@ -8,7 +8,7 @@ function Transaction({ transaction, onDelete }) {
   const handleDelete = async () => {
     try {
       // Sending a DELETE request to delete the transaction with the specified ID
-      const response = await fetch(`http://localhost:8001/transactions/${id}`, {
+      const response = await fetch(`https://code-challenge-phase-2-wk-1-2.onrender.com/transactions/${id}`, {
         method: "DELETE",
       });
       
